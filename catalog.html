@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин мороженого "Gllacy Shop"</title>
+</head>
+
+<body style="background-color: #849D8F;">
+
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img\index\logo.svg" width="154" height="64" alt="Логотип магазина мороженого Gllacy Shop">
+            </a>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="blank.html">Доставка и оплата</a></li>
+                <li><a href="blank.html">О компании</a></li>
+            </ul>
+            <li><a href="#">
+                    <img src="img\index\icon_search.svg" width="16" height="16">
+                </a></li>
+            <li><a href="blank.html">
+                    <img src="img\index\icon_authorization.svg" width="20" height="19">
+                    Вход</a></li>
+            <li><a href="blank.html">
+                    <img src="img\index\icon_basket.svg" width="21" height="20">
+                    Корзина</a></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Сливочное мороженое</h1>
+
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    Сливочное мороженое
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Фильтр товаров</h2>
+            <p> <!--TODO: fieldset не надо оборачивать в тег p-->
+            <fieldset>
+                <legend>Сортировка:</legend>
+                <form action="select1.php" method="post">
+                    <p><select size="1" name="sort[]">
+                            <option value="по популярности">по популярности</option>
+                            <option selected value="сначала недорогие">сначала недорогие</option>
+                            <option value="сначала дорогие">сначала дорогие</option>
+                            <option value="по жирности">по жирности</option>
+                        </select></p>
+                    <p><input type="submit" value="Отправить"></p>
+                </form>
+            </fieldset>
+            </p>
+            <p>
+                <fieldset>Цена: 100 Р - 500 Р</p> <!--TODO: работает некорректно. Привести в порядок-->
+            <p><input type="range" min="0" max="100" step="1" value="50"></fieldset></p>
+            <fieldset>
+                <legend>Жирность</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="fat" value="extra-low" id="0%">
+                        <label for="0%">0%</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" value="low" id="0-10%">
+                        <label for="0-10%">до 10%</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" value="high" id="10-30%">
+                        <label for="10-30%">до 30%</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" value="extra-high" id="30%">
+                        <label for="30%">от 30%</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p><button type="submit">Показать</button></p>
+            <section>
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Наполнители</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="шоколадные" id="шоколадные" checked>
+                                <label for="шоколадные">шоколадные</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="сахарные присыпки" id="сахарные присыпки" unchecked>
+                                <label for="сахарные присыпки">сахарные присыпки</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="фрукты" id="фрукты" unchecked>
+                                <label for="фрукты">фрукты</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="сиропы" id="сиропы" unchecked>
+                                <label for="сиропы">сиропы</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="джемы" id="джемы" unchecked>
+                                <label for="джемы">джемы</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p><button type="submit">Применить</button></p>
+                </form>
+            </section>
+            <section> <!--TODO: сделать одну большую секцию с набором артикулов-->
+                <ul>
+                    <li>
+                        <a href="blank.html"> <input type="image" src="img\index\hit_1.jpg">
+                            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\index\hit_2.jpg">
+                            <p>Сливочно-кофейное с кусочками шоколада</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\index\hit_3.jpg">
+                            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\index\hit_4.jpg">
+                            <p>Сливочное крем-брюле c карамельной подливкой</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="blank.html"></a><img src="img\catalog\product_1.jpg">
+                        <p>Сливочное с брусничным джемом</p></a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_2.jpg">
+                            <p>Сливочно-черничное с цельными ягодами черники</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_3.jpg">
+                            <p>Сливочно-лимонное с карамельной присыпкой</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_4.jpg">
+                            <p>Сливочное с шоколадной стружкой</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_5.jpg">
+                            <p>Сливочно-ванильное с кусочками шоколада</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_6.jpg">
+                            <p>Сливочное с ментоловым сиропом</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_7.jpg">
+                            <p>Сливочное с кусочками черного шоколада</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                    <li>
+                        <a href="blank.html"><img src="img\catalog\product_8.jpg">
+                            <p>Сливочное с мятным сиропом</p>
+                        </a>
+                        <p><button type="button">Быстрый просмотр</button></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                </ul>
+            </section>
+    </main>
+    <footer>
+        <section>
+            <ul>
+                <a href="#"><img src="img\index\icon_facebook.svg" width="32" height="32"></img></a>
+                <a href="#"><img src="img\index\icon_vk.svg" width="32" height="32"></img></a>
+                <a href="#"><img src="img\index\icon_instagram.svg" width="32" height="32"></img></a>
+                <a href="#"><img src="img\index\icon_twitter.svg" width="32" height="32"></img></a>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <p><a href="blank.html">
+                        <img src="img\index\heart.svg" width="15" height="13"></img>
+                        Для поставщиков</a>
+                    <a href="blank.html">Наши документы</a>
+                </p>
+                <p><a href="blank.html">О производстве</a>
+                    <a href="blank.html">Экологические стандарты</a>
+                </p>
+            </ul>
+        </section>
+        <section>
+            <img src="img\index\logo_academy.svg" width="108" height="39" viewBox="0 0 108 39" fill="none">
+            <p>Сделано в <a href="blank.html">HTML Academy</a> © 2019</p>
+        </section>
+    </footer>
+    <section>
+        <h2>Личный кабинет</h2>
+        <p>Введите, пожалуйста, свой логин и пароль</p>
+        <form action="http://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="login-login">Логин</label>
+                <input id="login-login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" type="password" name="pasword" placeholder="********">
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="remember">
+                    Запомните меня
+                </label>
+                <a href="blank.html">Я забыл пароль!</a>
+            </p>
+            <p>
+                <button type="submit">Войти</button>
+            </p>
+        </form>
+        <p>
+            <button type="button">Закрыть</button>
+        </p>
+    </section>
+</body>
+
+</html>
